@@ -54,7 +54,7 @@
                                             <button type="submit" class="btn btn-primary">Cari</button>
                                         </form>
                     
-                                        @if ($penduduks->count() > 0)
+                                        @if ($totalData > 0)
                                             <table class="table">
                                                 <thead>
                                                     <tr>
@@ -89,10 +89,15 @@
                                             {{ $penduduks->links() }}
                                         @else
                                             <p>Tidak ada data penduduk.</p>
-                                            @endif
-                                        </div>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        @endsection
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
